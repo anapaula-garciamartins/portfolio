@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+body {
+  font-family: var(--font-inter);
+}
+
+@theme {
+  --color-black: #000000;
+  --color-gray: #acacac;
+  --color-pink: #ecacbc;
+  --color-pink-dark: #86626b;
+  --color-white: #ffffff;
+}
+
+@layer utilities {
+  .bg-gradient {
+    @apply bg-gradient-to-b from-[#ECACBC] to-[#86626B];
+  }
+}
