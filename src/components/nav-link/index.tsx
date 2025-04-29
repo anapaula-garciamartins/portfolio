@@ -13,7 +13,7 @@ export default function NavLink({ children, href }: NavLinkProps) {
   return (
     <li
       data-active={isActive}
-      className='flex items-center justify-center p-1 gap-3 text-gray min-w-fit border-b border-transparent data-[active="true"]:text-pink  data-[active="true"]:border-pink'
+      className='flex items-center justify-center p-1 gap-3 text-gray min-w-fit border-b border-transparent data-[active="true"]:text-pink  data-[active="true"]:border-pink md:text-2xl'
     >
       <Link href={href}>{children}</Link>
     </li>
