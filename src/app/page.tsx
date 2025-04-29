@@ -1,3 +1,4 @@
+import FloatingMenu from '@/components/floating-menu';
 import Header from '@/components/header';
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
 import Image from 'next/image';
@@ -29,7 +30,7 @@ export default function Home() {
           alt='Mulher jovem de cabelos longos e escuros sorrindo levemente, com as mãos apoiadas sob o queixo em pose descontraída. Fundo recortado em formato orgânico.'
         />
       </main>
-      <footer className=' flex p-4'>
+      <footer className='flex p-4'>
         <Link href='/sobre-mim'>
           <button className='flex items-center justify-center gap-2 px-4 py-3 bg-white text-black font-medium rounded-full '>
             Explore comigo
@@ -37,6 +38,7 @@ export default function Home() {
           </button>
         </Link>
       </footer>
+      <FloatingMenu></FloatingMenu>
     </div>
   );
 }
