@@ -1,4 +1,6 @@
+'use client';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 type NavLinkProps = {
   children: React.ReactNode;
@@ -6,8 +8,13 @@ type NavLinkProps = {
 };
 
 export default function NavLink({ children, href }: NavLinkProps) {
+  const path = usePathname();
+  const isActive = path === href;
   return (
-    <li className='flex items-center justify-center p-1 gap-3 text-gray min-w-fit'>
+    <li
+      data-active={isActive}
+      className='flex items-center justify-center p-1 gap-3 text-gray min-w-fit border-b border-transparent data-[active="true"]:text-pink  data-[active="true"]:border-pink'
+    >
       <Link href={href}>{children}</Link>
     </li>
   );
