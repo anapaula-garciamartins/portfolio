@@ -6,11 +6,11 @@ import Link from 'next/link';
 
 export default function SobreMim() {
   return (
-    <div className='flex flex-col gap-8'>
+    <div className='flex flex-col items-center gap-8'>
       <Header></Header>
-      <main className='flex flex-col justify-center gap-4 px-4'>
+      <main className='flex flex-col justify-center md:text-center gap-4 px-4 md:px-12 md:gap-6 xl:gap-10 max-w-[1200px]'>
         <h1 className='font-bold text-5xl'>Quem sou eu?</h1>
-        <p>
+        <p className='md:text-2xl xl:text-3xl'>
           Me chamo Ana Paula, mas pode me chamar de Ana (afinal, quem teve a ideia de
           nomes compostos?). <br />
           Sou desenvolvedora <span className='text-pink font-bold'>front-end</span>,{' '}
@@ -22,13 +22,15 @@ export default function SobreMim() {
           Fora das telas, sou uma leitora voraz, fã de jogos, séries e aventuras na
           cozinha. Também sou completamente apaixonada por animais, a irmã mais babona do
           mundo e, segundo meu marido, a esposa engraçadinha. <br />
-          Seja bem-vindo(a) ao meu mundo digital.{' '}
+          Seja bem-vindo(a) ao meu mundo digital. <br />
           <span className='text-pink font-bold'>
             Vamos construir algo incrível juntos?
           </span>
         </p>
-        <h2 className='text-[32px] leading-9'>Tecnologias e ferramentas que utilizo</h2>
-        <div className='grid grid-cols-2 gap-4'>
+        <h2 className='text-[32px] leading-9 font-bold'>
+          Tecnologias e ferramentas que utilizo
+        </h2>
+        <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
           <TechToolsCard
             title='HTML'
             src='/techs/html.png'
