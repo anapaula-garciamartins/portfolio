@@ -1,4 +1,5 @@
 import Button from '@/components/button';
+import FloatingMenu from '@/components/floating-menu';
 import Header from '@/components/header';
 import TechToolsCard from '@/components/tech-tools-card';
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
@@ -30,7 +31,7 @@ export default function SobreMim() {
         <h2 className='text-[32px] leading-9 font-bold'>
           Tecnologias e ferramentas que utilizo
         </h2>
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
+        <section className='grid grid-cols-2 md:grid-cols-3 gap-4'>
           <TechToolsCard
             title='HTML'
             src='/techs/html.png'
@@ -66,15 +67,16 @@ export default function SobreMim() {
             src='/tools/figma.png'
             alt='Logo do Figma: cinco formas circulares coloridas formando a letra F, representando a ferramenta de design colaborativo focada em UI e prototipação.'
           />
-        </div>
-        <footer className='flex p-4 justify-center'>
-          <Link href='/projetos'>
-            <Button>
-              Conheça meus projetos <ArrowRight></ArrowRight>
-            </Button>
-          </Link>
-        </footer>
+        </section>
       </main>
+      <footer className='flex p-4 justify-center'>
+        <Link href='/projetos'>
+          <Button>
+            Conheça meus projetos <ArrowRight></ArrowRight>
+          </Button>
+        </Link>
+      </footer>
+      <FloatingMenu className='hidden md:flex'></FloatingMenu>
     </div>
   );
 }

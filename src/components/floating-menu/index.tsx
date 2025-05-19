@@ -3,10 +3,16 @@ import {
   LinkedinLogo,
   MicrosoftOutlookLogo,
 } from '@phosphor-icons/react/dist/ssr';
+import { twMerge } from 'tailwind-merge';
 
-export default function FloatingMenu() {
+export default function FloatingMenu({ className }: { className?: string }) {
   return (
-    <div className='w-fit flex flex-col items-center justify-center gap-6 px-2 py-4 rounded-full border border-pink text-pink fixed right-4 bottom-4 bg-black'>
+    <div
+      className={twMerge(
+        'w-fit flex flex-col items-center justify-center gap-6 px-2 py-4 rounded-full border border-pink text-pink fixed right-4 bottom-4 bg-black',
+        className
+      )}
+    >
       <a
         target='_blank'
         rel='noopener'
