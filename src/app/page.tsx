@@ -1,3 +1,4 @@
+import Button from '@/components/button';
 import FloatingMenu from '@/components/floating-menu';
 import Header from '@/components/header';
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
@@ -35,10 +36,9 @@ export default function Home() {
       </main>
       <footer className='flex p-4 md:justify-center'>
         <Link href='/sobre-mim'>
-          <button className='flex items-center justify-center gap-2 px-4 py-3 bg-white text-black font-medium rounded-full cursor-pointer hover:bg-pink transition-colors'>
-            Explore comigo
-            <ArrowRight></ArrowRight>
-          </button>
+          <Button>
+            Explore comigo <ArrowRight></ArrowRight>
+          </Button>
         </Link>
       </footer>
       <FloatingMenu></FloatingMenu>
