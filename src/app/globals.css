@@ -8,13 +8,13 @@ body {
   --color-black: #000000;
   --color-gray: #acacac;
   --color-lead: #29292e;
-  --color-pink: #ecacbc;
-  --color-pink-dark: #86626b;
+  --color-pink: #fd70a1;
+  --color-pink-dark: #b54c6f;
   --color-white: #ffffff;
 }
 
 @layer utilities {
   .bg-gradient {
-    @apply bg-gradient-to-b from-[#ECACBC] to-[#86626B];
+    @apply bg-gradient-to-b from-[#fd70a1] to-[#b54c6f];
   }
 }

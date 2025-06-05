@@ -12,20 +12,28 @@ export default function SobreMim() {
       <main className='flex flex-col justify-center md:text-center gap-4 px-4 md:px-12 md:gap-6 xl:gap-10 max-w-[1200px]'>
         <h1 className='font-bold text-5xl'>Quem sou eu?</h1>
         <p className='md:text-2xl xl:text-3xl'>
-          Me chamo Ana Paula, mas pode me chamar de Ana (afinal, quem teve a ideia de
-          nomes compostos?). <br />
-          Sou desenvolvedora <span className='text-pink font-bold'>front-end</span> e
-          também <span className='text-pink font-bold'>designer</span>, apaixonada por
-          transformar ideias em interfaces intuitivas e atraentes. <br />
-          Entre códigos e criatividade, busco criar experiências digitais que unem
-          estética e funcionalidade. <br />
-          Fora das telas, sou uma leitora voraz, fã de jogos, séries e aventuras na
-          cozinha. Também sou completamente apaixonada por animais, a irmã mais babona do
-          mundo e, segundo meu marido, a esposa engraçadinha. <br />
-          Seja bem-vindo(a) ao meu mundo digital. <br />
+          {' '}
+          Oi! Eu sou a Ana — desenvolvedora{' '}
+          <span className='text-pink font-bold'>front-end</span> e{' '}
+          <span className='text-pink font-bold'>designer</span> (sim, os dois, porque a
+          vida é curta demais pra escolher só um lado do cérebro). <br />
+          Minha paixão é transformar ideias em experiências digitais que façam sentido,
+          encantem e funcionem de verdade. <br /> Gosto de unir lógica com estética,
+          código com empatia, e tecnologia com aquele toque humano que faz diferença.{' '}
+          <br /> Sou{' '}
           <span className='text-pink font-bold'>
-            Vamos construir algo incrível juntos?
-          </span>
+            tecnóloga em Análise e Desenvolvimento de Sistemas
+          </span>{' '}
+          pela <span className='text-pink font-bold'>UNINTER</span> de Porto Alegre, o que
+          fortalece minha base técnica e alimenta meu lado inquieto que adora resolver
+          problemas com criatividade. <br /> Quando não tô criando interfaces ou
+          mergulhada em um layout, você provavelmente vai me encontrar com um livro na
+          mão, cozinhando alguma receita maluca, maratonando séries com meu marido ou
+          mimando e babando todos animais do mundo (e meus irmãos também, porque irmã
+          coruja é apelido). <br /> Aqui no meu portfólio, você vai ver um pouquinho do
+          meu jeito de pensar, criar e resolver. <br /> Se quiser trocar ideia, colaborar
+          ou só bater um papo sobre design, tecnologia ou a vida — chega mais. <br />
+          <span className='text-pink font-bold'>Vamos criar algo incrível?</span>
         </p>
         <h2 className='text-[32px] leading-9 font-bold'>
           Tecnologias e ferramentas que utilizo
