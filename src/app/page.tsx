@@ -12,11 +12,11 @@ export default function Home() {
       <main className='px-4 flex flex-col max-w-[1200px] gap-4 xl:flex-row xl:justify-center xl:items-center flex-1 md:px-12 md:gap-16'>
         <div className='flex flex-col justify-center gap-3 md:gap-6'>
           <h1 className='font-bold text-5xl tracking-tight md:text-7xl'>
-            Olá! Sou <br />
-            Ana Paula✌️
+            ✨ Olá! Sou <br />
+            Ana Paula ✨
           </h1>
-          <h2 className='text-2xl font-semibold bg-pink bg-clip-text text-transparent md:text-5xl'>
-            Front End Developer
+          <h2 className='text-2xl font-semibold text-pink md:text-5xl'>
+            Front End Developer & UI/UX Designer
           </h2>
           <h3 className='text-gray md:text-[32px]'>
             Seja bem vindo(a) ao meu Portfólio!
