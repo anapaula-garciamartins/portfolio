@@ -16,11 +16,11 @@ export default function FloatingMenu({ className }: { className?: string }) {
       <a
         target='_blank'
         rel='noopener'
-        href='https://www.linkedin.com/in/ana-paulamartins'
+        href='https://www.linkedin.com/in/anapaula-garciamartins'
       >
         <LinkedinLogo size={32}></LinkedinLogo>
       </a>
-      <a target='_blank' rel='noopener' href='https://github.com/martins-ana'>
+      <a target='_blank' rel='noopener' href='https://github.com/anapaula-garciamartins'>
         <GithubLogo size={32}></GithubLogo>
       </a>
       <a target='_blank' rel='noopener' href='mailto:martinsgarciaana@outlook.com'>
