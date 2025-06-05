@@ -15,7 +15,7 @@ export default function Home() {
             Olá! Sou <br />
             Ana Paula✌️
           </h1>
-          <h2 className='text-2xl font-semibold bg-gradient bg-clip-text text-transparent md:text-5xl'>
+          <h2 className='text-2xl font-semibold bg-pink bg-clip-text text-transparent md:text-5xl'>
             Front End Developer
           </h2>
           <h3 className='text-gray md:text-[32px]'>
@@ -27,10 +27,10 @@ export default function Home() {
           </p>
         </div>
         <Image
-          className='size-[200px] md:size-[400px] xl:size-[600px]'
+          className='size-[400px] xl:size-[600px] object-contain'
           width={600}
           height={600}
-          src='/ImagemPerfil.png'
+          src='/ImagemPerfil.webp'
           alt='Mulher jovem de cabelos longos e escuros sorrindo levemente, com as mãos apoiadas sob o queixo em pose descontraída. Fundo recortado em formato orgânico.'
         />
       </main>

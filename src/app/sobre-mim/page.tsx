@@ -14,9 +14,8 @@ export default function SobreMim() {
         <p className='md:text-2xl xl:text-3xl'>
           Me chamo Ana Paula, mas pode me chamar de Ana (afinal, quem teve a ideia de
           nomes compostos?). <br />
-          Sou desenvolvedora <span className='text-pink font-bold'>front-end</span>,{' '}
-          <span className='text-pink font-bold'>designer</span> e{' '}
-          <span className='text-pink font-bold'>freelancer</span>, apaixonada por
+          Sou desenvolvedora <span className='text-pink font-bold'>front-end</span> e
+          também <span className='text-pink font-bold'>designer</span>, apaixonada por
           transformar ideias em interfaces intuitivas e atraentes. <br />
           Entre códigos e criatividade, busco criar experiências digitais que unem
           estética e funcionalidade. <br />
@@ -43,19 +42,24 @@ export default function SobreMim() {
             alt='Logo do CSS3: escudo azul com número 3 branco no centro, simbolizando a linguagem de estilo usada para criar layouts, cores e responsividade em sites.'
           />
           <TechToolsCard
+            title='Tailwind'
+            src='/techs/tailwind.png'
+            alt='Logo do Tailwind CSS: forma ondulada em azul sobre fundo branco, simbolizando o framework utilitário usado para estilizar páginas com rapidez e personalização.'
+          />
+          <TechToolsCard
             title='JavaScript'
             src='/techs/js.png'
             alt='Logo do JavaScript: fundo amarelo com as letras JS em preto, representando a linguagem de programação responsável por adicionar interatividade às páginas web.'
           />
           <TechToolsCard
+            title='Typescript'
+            src='/techs/ts.png'
+            alt='Logo do TypeScript: quadrado azul com as letras TS em branco, representando a linguagem de programação tipada que estende o JavaScript, usada para desenvolvimento robusto e escalável.'
+          />
+          <TechToolsCard
             title='React'
             src='/techs/react.png'
             alt='Logo do React: átomo azul claro sobre fundo escuro, representando a biblioteca JavaScript usada para criar interfaces dinâmicas baseadas em componentes.'
-          />
-          <TechToolsCard
-            title='Tailwind'
-            src='/techs/tailwind.png'
-            alt='Logo do Tailwind CSS: forma ondulada em azul sobre fundo branco, simbolizando o framework utilitário usado para estilizar páginas com rapidez e personalização.'
           />
           <TechToolsCard
             title='Next.js'

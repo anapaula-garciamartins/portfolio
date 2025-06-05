@@ -7,6 +7,7 @@ body {
 @theme {
   --color-black: #000000;
   --color-gray: #acacac;
+  --color-lead: #29292e;
   --color-pink: #ecacbc;
   --color-pink-dark: #86626b;
   --color-white: #ffffff;
