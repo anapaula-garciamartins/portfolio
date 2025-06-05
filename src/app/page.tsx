@@ -7,9 +7,9 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className='h-screen flex flex-col gap-8'>
+    <div className='h-screen flex flex-col items-center gap-8'>
       <Header></Header>
-      <main className='px-4 flex flex-col gap-4 xl:flex-row xl:justify-center xl:items-center flex-1 md:px-12 md:gap-16'>
+      <main className='px-4 flex flex-col max-w-[1200px] gap-4 xl:flex-row xl:justify-center xl:items-center flex-1 md:px-12 md:gap-16'>
         <div className='flex flex-col justify-center gap-3 md:gap-6'>
           <h1 className='font-bold text-5xl tracking-tight md:text-7xl'>
             Olá! Sou <br />

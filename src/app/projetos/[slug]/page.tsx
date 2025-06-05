@@ -5,6 +5,7 @@ import TechToolsCard from '@/components/tech-tools-card';
 import Link from 'next/link';
 import Button from '@/components/button';
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
+import FloatingMenu from '@/components/floating-menu';
 
 export default async function Projeto({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -17,20 +18,28 @@ export default async function Projeto({ params }: { params: Promise<{ slug: stri
   return (
     <div className='flex flex-col items-center min-h-dvh'>
       <Header></Header>
-      <main className='flex flex-col gap-4'>
-        <Image width={320} height={200} src={project.image.src} alt={project.image.alt} />
-        <div className='flex flex-col gap-1 px-4'>
-          <h1 className='font-bold text-[32px]'>{project.title}</h1>
+      <main className='flex flex-col gap-4 w-full max-w-[1200px] pb-4 md:gap-8 md:px-20 md:pb-20'>
+        <Image
+          width={1200}
+          height={600}
+          src={project.image.src}
+          alt={project.image.alt}
+          className='w-full border-2 border-pink rounded-4xl'
+        />
+        <div className='flex flex-col gap-1 px-4 md:items-center'>
+          <h1 className='font-bold text-[32px] md:text-5xl'>{project.title}</h1>
           <h2 className='text-2xl'>{project.subtitle}</h2>
         </div>
         {project.site && (
-          <section className='flex flex-col gap-4 p-4 bg-lead rounded-lg'>
+          <section className='flex flex-col gap-4 p-4 bg-lead rounded-4xl md:gap-6 md:p-6'>
             <div className='flex flex-col gap-1'>
-              <h3 className='text-pink text-2xl font-semibold'>Sobre o Site</h3>
-              <p className='text-sm'>{project.site?.description}</p>
+              <h3 className='text-pink text-2xl md:text-4xl font-semibold'>
+                Sobre o Site
+              </h3>
+              <p className='text-sm md:text-xl'>{project.site?.description}</p>
             </div>
             <div className='flex flex-col gap-6'>
-              <h4 className='text-pink text-2xl font-semibold'>
+              <h4 className='text-pink text-2xl md:text-4xl font-semibold'>
                 Tecnologias Utilizadas no Desenvolvimento
               </h4>
               <div className='flex flex-wrap gap-4 items-center justify-center'>
@@ -52,13 +61,15 @@ export default async function Projeto({ params }: { params: Promise<{ slug: stri
           </section>
         )}
         {project.design && (
-          <section className='flex flex-col gap-4 p-4 bg-lead rounded-lg'>
+          <section className='flex flex-col gap-4 p-4 bg-lead rounded-4xl md:gap-6 md:p-6'>
             <div className='flex flex-col gap-1'>
-              <h3 className='text-pink text-2xl font-semibold'>Sobre o Design</h3>
-              <p className='text-sm'>{project.design?.description}</p>
+              <h3 className='text-pink text-2xl md:text-4xl font-semibold'>
+                Sobre o Design
+              </h3>
+              <p className='text-sm md:text-xl'>{project.design?.description}</p>
             </div>
             <div className='flex flex-col gap-6'>
-              <h4 className='text-pink text-2xl font-semibold'>
+              <h4 className='text-pink text-2xl md:text-4xl font-semibold'>
                 Ferramentas Utilizadas no Design
               </h4>
               <div className='flex flex-wrap gap-4 items-center justify-center'>
@@ -80,6 +91,7 @@ export default async function Projeto({ params }: { params: Promise<{ slug: stri
           </section>
         )}
       </main>
+      <FloatingMenu className='hidden md:flex'></FloatingMenu>
     </div>
   );
 }
