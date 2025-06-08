@@ -44,12 +44,7 @@ export default async function Projeto({ params }: { params: Promise<{ slug: stri
               </h4>
               <div className='flex flex-wrap gap-4 items-center justify-center'>
                 {project.site?.technologies.map((tech) => (
-                  <TechToolsCard
-                    key={tech.title}
-                    title={tech.title}
-                    src={tech.src}
-                    alt={tech.alt}
-                  />
+                  <TechToolsCard key={tech.title} tech={tech} />
                 ))}
               </div>
             </div>
@@ -74,12 +69,7 @@ export default async function Projeto({ params }: { params: Promise<{ slug: stri
               </h4>
               <div className='flex flex-wrap gap-4 items-center justify-center'>
                 {project.design?.technologies.map((tech) => (
-                  <TechToolsCard
-                    key={tech.title}
-                    title={tech.title}
-                    src={tech.src}
-                    alt={tech.alt}
-                  />
+                  <TechToolsCard key={tech.title} tech={tech} />
                 ))}
               </div>
             </div>
